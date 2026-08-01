@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — GrabVault</title>
+<meta name="description" content="Get in touch with the GrabVault team for support, feedback, or business inquiries.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Contact Form Specific Styling matching GrabVault Theme */
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  @media (max-width: 860px) {
+    .contact-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact-info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow);
+  }
+
+  .contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .contact-info-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-info-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--surface-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .contact-info-text h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .contact-info-text p, .contact-info-text a {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .contact-info-text a:hover {
+    color: var(--accent);
+  }
+
+  .contact-form-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 36px;
+    box-shadow: var(--shadow);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-group label {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text);
+    letter-spacing: .02em;
+  }
+
+  .form-control {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    transition: border-color .2s ease, box-shadow .2s ease;
+    outline: none;
+  }
+
+  .form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+  }
+
+  textarea.form-control {
+    resize: vertical;
+    min-height: 130px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  @media (max-width: 560px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact-btn {
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .form-status {
+    margin-top: 14px;
+    font-size: 13.5px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>GrabVault</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="youtube.html">YouTube</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="facebook.html">Facebook</a>
+      <a href="tiktok.html">TikTok</a>
+      <a href="pinterest.html">Pinterest</a>
+      <a href="how-to-download.html">How To Download</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle dark and light mode"></button>
+      <button class="nav-toggle-btn" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-drawer">
+    <a href="index.html">Home</a>
+    <a href="youtube.html">YouTube</a>
+    <a href="instagram.html">Instagram</a>
+    <a href="facebook.html">Facebook</a>
+    <a href="tiktok.html">TikTok</a>
+    <a href="pinterest.html">Pinterest</a>
+    <a href="how-to-download.html">How To</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <p class="eyebrow">Support &amp; Feedback</p>
+    <h1>Get in <span class="grad">Touch</span></h1>
+    <p class="typewriter-line mono">Reach out for <span id="typewriter"></span><span class="cursor"></span></p>
+  </div>
+</header>
+
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="contact-wrapper">
+      
+      <!-- Contact Info Section -->
+      <div class="contact-info-card" data-reveal>
+        <h3 style="margin-bottom: 20px;">We're here to help</h3>
+        <p style="color: var(--muted); margin-bottom: 28px; font-size: 14.5px;">Have questions, bug reports, or partnership proposals? Drop us a message and our team will get back to you within 24 hours.</p>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">✉️</div>
+          <div class="contact-info-text">
+            <h4>Email Us</h4>
+            <a href="mailto:rhassnain353@gmail.com">rhassnain353@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">⚡</div>
+          <div class="contact-info-text">
+            <h4>Response Time</h4>
+            <p>Usually within 12–24 hours</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🔒</div>
+          <div class="contact-info-text">
+            <h4>Privacy Guaranteed</h4>
+            <p>Your details are verified via OTP &amp; never shared.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card" data-reveal>
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="What is this regarding?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+
+          <!-- OTP Input Group (Default Hidden) -->
+          <div class="form-group" id="otp-group" style="display: none;">
+            <label for="otp" style="color: var(--accent);">Verification Code (Sent to your email)</label>
+            <input type="text" id="otp" name="otp" class="form-control" placeholder="Enter 6-digit OTP">
+          </div>
+
+          <!-- Action Buttons -->
+          <button type="button" id="btn-send-otp" class="btn contact-btn">Get Verification Code ✉️</button>
+          <button type="submit" id="btn-submit" class="btn contact-btn" style="display: none; background: var(--accent); color: #0f1115;">Verify &amp; Send Message ✅</button>
+          
+          <p class="form-status mono" id="contact-status"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--surface); border-top:1px solid var(--border);">
+  <div class="container" style="max-width:760px;">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Quick Answers</p>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-item" data-reveal>
+      <div class="faq-q">My download isn't starting, what should I do? <span class="faq-toggle-icon">+</span></div>
+      <div class="faq-a">Make sure the video URL is from a public post or account. If the issue persists, try refreshing the page or checking your internet connection.</div>
+    </div>
+    <div class="faq-item" data-reveal>
+      <div class="faq-q">Do you store any personal information? <span class="faq-toggle-icon">+</span></div>
+      <div class="faq-a">No, GrabVault operates with zero tracking and does not save your links, downloads, or IP logs.</div>
+    </div>
+    <div class="faq-item" data-reveal>
+      <div class="faq-q">Why is email OTP verification required? <span class="faq-toggle-icon">+</span></div>
+      <div class="faq-a">Verification ensures that all messages come from valid email addresses and allows us to reply directly to your inbox without spam.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="index.html" class="logo"><span class="logo-mark"></span>GrabVault</a>
+        <p>Paste a link, pick a quality, and save video or audio from your favorite platforms — no installs, no watermark.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Downloaders</h5>
+        <ul>
+          <li><a href="youtube.html">YouTube Downloader</a></li>
+          <li><a href="instagram.html">Instagram Downloader</a></li>
+          <li><a href="facebook.html">Facebook Downloader</a></li>
+          <li><a href="tiktok.html">TikTok Downloader</a></li>
+          <li><a href="pinterest.html">Pinterest Downloader</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Guides</h5>
+        <ul>
+          <li><a href="how-to-download.html">How to Download Videos</a></li>
+          <li><a href="how-to-download.html">Desktop &amp; Mobile Guide</a></li>
+          <li><a href="how-to-download.html">General FAQ</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Supported Platforms</h5>
+        <ul>
+          <li><a href="youtube.html">YouTube · Shorts · MP3</a></li>
+          <li><a href="instagram.html">Reels · Stories · Posts</a></li>
+          <li><a href="facebook.html">Videos · Reels</a></li>
+          <li><a href="tiktok.html">No-watermark Video</a></li>
+          <li><a href="pinterest.html">Pins · Video Pins</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 GrabVault. For personal, non-commercial use only. Respect creators' rights.</p>
+      <div class="foot-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  if (typeof setupTypewriter === 'function') {
+    setupTypewriter(document.getElementById('typewriter'), ['Help & Support', 'Bug Reports', 'Feedback', 'Partnerships']);
+  }
+
+  const form = document.getElementById('contact-form');
+  const btnSendOtp = document.getElementById('btn-send-otp');
+  const btnSubmit = document.getElementById('btn-submit');
+  const otpGroup = document.getElementById('otp-group');
+  const statusText = document.getElementById('contact-status');
+
+  // 1. Send OTP logic
+  btnSendOtp.addEventListener('click', async () => {
+    const email = document.getElementById('email').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!email || !name || !subject || !message) {
+      statusText.style.color = '#ff4d4d';
+      statusText.textContent = 'Please fill out all fields before requesting OTP!';
+      return;
+    }
+
+    btnSendOtp.textContent = 'Sending Verification Code...';
+    btnSendOtp.disabled = true;
+
+    try {
+      const response = await fetch('http://127.0.0.1:5000/send-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        statusText.style.color = 'var(--accent, #33e6c4)';
+        statusText.textContent = 'OTP code sent to your email. Check your inbox!';
+        otpGroup.style.display = 'block';
+        btnSendOtp.style.display = 'none';
+        btnSubmit.style.display = 'block';
+      } else {
+        statusText.style.color = '#ff4d4d';
+        statusText.textContent = data.message || 'Failed to send OTP.';
+        btnSendOtp.textContent = 'Get Verification Code ✉️';
+        btnSendOtp.disabled = false;
+      }
+    } catch (error) {
+      statusText.style.color = '#ff4d4d';
+      statusText.textContent = 'Server connection error. Make sure your Flask app is running.';
+      btnSendOtp.textContent = 'Get Verification Code ✉️';
+      btnSendOtp.disabled = false;
+    }
+  });
+
+  // 2. Verify OTP & Send Message logic
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const otpVal = document.getElementById('otp').value.trim();
+
+    if (!otpVal) {
+      statusText.style.color = '#ff4d4d';
+      statusText.textContent = 'Please enter the 6-digit OTP code!';
+      return;
+    }
+
+    btnSubmit.textContent = 'Verifying & Sending...';
+    btnSubmit.disabled = true;
+
+    const formData = {
+      name: document.getElementById('name').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      subject: document.getElementById('subject').value.trim(),
+      message: document.getElementById('message').value.trim(),
+      otp: otpVal
+    };
+
+    try {
+      const response = await fetch('http://127.0.0.1:5000/verify-and-send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        statusText.style.color = 'var(--accent, #33e6c4)';
+        statusText.textContent = 'Success! Your message has been verified and sent to rhassnain353@gmail.com.';
+        form.reset();
+        otpGroup.style.display = 'none';
+        btnSubmit.style.display = 'none';
+        btnSendOtp.style.display = 'block';
+        btnSendOtp.disabled = false;
+        btnSendOtp.textContent = 'Get Verification Code ✉️';
+      } else {
+        statusText.style.color = '#ff4d4d';
+        statusText.textContent = data.message || 'Incorrect OTP code! Message not sent.';
+        btnSubmit.textContent = 'Verify & Send Message ✅';
+        btnSubmit.disabled = false;
+      }
+    } catch (error) {
+      statusText.style.color = '#ff4d4d';
+      statusText.textContent = 'Error connecting to server while verifying.';
+      btnSubmit.textContent = 'Verify & Send Message ✅';
+      btnSubmit.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>
+contact.html
+Displaying contact.html.

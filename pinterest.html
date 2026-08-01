@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-accent="pinterest">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinterest Video &amp; Pin Downloader — GrabVault</title>
+<meta name="description" content="Download Pinterest video pins and images in original quality.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-accent="pinterest">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>GrabVault</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="youtube.html">YouTube</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="facebook.html">Facebook</a>
+      <a href="tiktok.html">TikTok</a>
+      <a href="pinterest.html" class="active">Pinterest</a>
+      <a href="how-to-download.html">How To Download</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle dark and light mode"></button>
+      <button class="nav-toggle-btn" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-drawer">
+    <a href="index.html">Home</a>
+    <a href="youtube.html">YouTube</a>
+    <a href="instagram.html">Instagram</a>
+    <a href="facebook.html">Facebook</a>
+      <a href="tiktok.html">TikTok</a>
+    <a href="pinterest.html">Pinterest</a>
+    <a href="how-to-download.html">How To</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <p class="eyebrow">📌 Pinterest Downloader</p>
+    <h1>Save <span class="grad">Pins</span> &amp; video pins</h1>
+    <p class="typewriter-line mono">Download <span id="typewriter"></span><span class="cursor"></span></p>
+
+    <form class="grab-box" data-grab-form>
+      <div class="grab-box-inner">
+        <input type="text" placeholder="Paste a Pinterest pin link…" aria-label="Pinterest URL">
+        <button type="submit" class="btn">↓ Grab pin</button>
+      </div>
+    </form>
+    <p class="hero-note mono" data-grab-status>Works with pinterest.com and pin.it links.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Options</p>
+      <h2>Images and video pins</h2>
+    </div>
+    <div class="grid-3">
+      <div class="tilt-card" data-reveal>
+        <div class="icon-box">🖼️</div>
+        <h3>Full-size image</h3>
+        <p>Save the original, uncompressed Pin image.</p>
+      </div>
+      <div class="tilt-card" data-reveal>
+        <div class="icon-box">🎥</div>
+        <h3>Video pins</h3>
+        <p>Download video Pins as MP4 at their source quality.</p>
+      </div>
+      <div class="tilt-card" data-reveal>
+        <div class="icon-box">📋</div>
+        <h3>Board-friendly</h3>
+        <p>Paste any pin link, no need to open the full board first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Steps</p>
+      <h2>How it works on Pinterest</h2>
+    </div>
+    <div class="steps">
+      <div class="flip-card" data-reveal><div class="flip-inner">
+        <div class="flip-front"><div class="step-num">01</div><h4>Open the Pin</h4></div>
+        <div class="flip-back">Find the image or video Pin you want to save.</div>
+      </div></div>
+      <div class="flip-card" data-reveal><div class="flip-inner">
+        <div class="flip-front"><div class="step-num">02</div><h4>Copy link</h4></div>
+        <div class="flip-back">Tap the share icon, then Copy Link.</div>
+      </div></div>
+      <div class="flip-card" data-reveal><div class="flip-inner">
+        <div class="flip-front"><div class="step-num">03</div><h4>Paste above</h4></div>
+        <div class="flip-back">Drop the link into the box at the top of this page.</div>
+      </div></div>
+      <div class="flip-card" data-reveal><div class="flip-inner">
+        <div class="flip-front"><div class="step-num">04</div><h4>Pick format</h4></div>
+        <div class="flip-back">Choose image or video, depending on the Pin type.</div>
+      </div></div>
+      <div class="flip-card" data-reveal><div class="flip-inner">
+        <div class="flip-front"><div class="step-num">05</div><h4>Save</h4></div>
+        <div class="flip-back">Your file lands in your device's downloads folder.</div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:760px;">
+    <div class="section-head" data-reveal><h2>Pinterest FAQ</h2></div>
+    <div class="faq-item" data-reveal>
+      <div class="faq-q">Does it work on private boards? <span class="faq-toggle-icon">+</span></div>
+      <div class="faq-a">Only pins from public boards can be accessed.</div>
+    </div>
+    <div class="faq-item" data-reveal>
+      <div class="faq-q">What image quality do I get? <span class="faq-toggle-icon">+</span></div>
+      <div class="faq-a">The original resolution uploaded by the pin's creator.</div>
+    </div>
+    <div class="faq-item" data-reveal>
+      <div class="faq-q">Can I download a whole board at once? <span class="faq-toggle-icon">+</span></div>
+      <div class="faq-a">Currently each pin is downloaded individually, one link at a time.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="youtube.html">YouTube</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="facebook.html">Facebook</a>
+      <a href="tiktok.html">TikTok</a>
+      <a href="pinterest.html">Pinterest</a>
+      <a href="how-to-download.html">How To Download</a>
+    </div>
+    <p>© 2026 GrabVault. For personal, non-commercial use only. Respect creators' rights.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  setupTypewriter(document.getElementById('typewriter'), ['Images', 'Video pins']);
+  setupGrabForm('Pinterest link', 'pinterest');
+</script>
+</body>
+</html>
